@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'Quarntype';
+    src: url(media/Quarantype.otf);
+}
+*{box-sizing: border-box;color: unset;text-decoration: none;}
+nav{
+    z-index: 99999;
+    text-transform: uppercase;
+    font-family: 'Quarntype';
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+nav h1{
+    text-align: center;
+    background-color: rgb(14, 14, 14);
+    padding: 0;margin: 0;
+    color: #C9AE43;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(27, 26, 26);
+    overflow-x: hidden;
+}
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    background-color: #0d0d0d;
+    height: auto;
+    overflow: hidden;
+    flex-direction: row;
+}
+.FlexContainer div {
+    width: 33%;
+    height: 300px;
+    margin: 0px;
+    background-color: rgb(15, 16, 16);
+    margin: -2px;
+    overflow: hidden;
+}
+.linksHeader{
+    text-align: center;
+    color: #C9AE43;
+    margin:25px 0 3px 0;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    background-color: #C9AE43;
+    width: 92%;
+    margin: 2% 4%;
+    height: 80px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.link span{font-size: 12px;letter-spacing: 0;margin-top: 5px;}
+
+.flow{
+    text-align: center;
+    color: #04b204;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-family: 'Quarntype';
+}
+.puzzle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.puzzle img{width: 200px;}
+.gif{height: 150px !important;display: flex;align-items: center;justify-content: center; overflow: hidden;}
+.kolaj1{height: 90% !important;}
+.kolaj1 img{width: 100vw;}
+.kolaj1text{height: 0% !important;}
+.kolaj1text img{width: 100vw;}
+.kolaj2 img{width: 100vw;}
+.wel{height: auto !important;}
+.wel img{width: 100vw;border-bottom: 5px solid black;}
+
+footer{display: flex;justify-content: center;align-items: center;padding: 20px;}
+footer img{width: 25px;opacity: 0.5;}
+
+
+@media only screen and (max-width:900px) {
+    .FlexContainer div {
+    width: 100%;
+}
+}
