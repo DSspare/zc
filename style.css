@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
     font-family: 'Quarntype';
     src: url(media/Quarantype.otf);
+}
+html{
+    width: 100vw;
+    margin: 0 auto;
+    overflow-x: hidden !important;
 }
 *{box-sizing: border-box;color: unset;text-decoration: none;}
 nav{
@@ -21,11 +26,12 @@ nav h1{
     letter-spacing: 3px;
 }
 body{
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     padding: 0;
-    margin: 0;
-    background-color: rgb(27, 26, 26);
-    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    overflow-x: hidden !important;
 }
 .FlexContainer {
     display: flex;
@@ -50,7 +56,7 @@ body{
 .linksHeader{
     text-align: center;
     color: #C9AE43;
-    margin:25px 0 3px 0;
+    margin:10vh 0 3px 0;
 }
 .links{
     display: flex;
@@ -77,6 +83,7 @@ body{
 .link span{font-size: 12px;letter-spacing: 0;margin-top: 5px;}
 
 .flow{
+    margin-top: 20vh;
     text-align: center;
     color: #04b204;
     font-weight: 400;
@@ -98,14 +105,73 @@ body{
 .kolaj1text img{width: 100vw;}
 .kolaj2 img{width: 100vw;}
 .wel{height: auto !important;}
-.wel img{width: 100vw;border-bottom: 5px solid black;}
+.wel img{width: 100vw;}
+.yoko{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh !important;
+    width: 100vw !important;
+    overflow: hidden;
+}
+.yoko h1{
+    font-size: 27px;
+    line-height: 150%;
+    margin: 0 10vw;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.yoko span{opacity: 0.8; font-size: 20px;}
+.varr{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 450px !important;
+    overflow: hidden;
+    margin-top: -4vh;
+}
+.varr img{width: 140vw;}
 
 footer{display: flex;justify-content: center;align-items: center;padding: 20px;}
 footer img{width: 25px;opacity: 0.5;}
-
-
-@media only screen and (max-width:900px) {
-    .FlexContainer div {
+.FlexContainer div {
     width: 100%;
 }
+
+@media only screen and (min-width:900px) {
+    html{
+        width: unset !important;
+        margin: 0;
+    }
+    body{
+        width: 40vw;
+        overflow-x: hidden;
+        margin: 0 30vw;
+        border-left: 3px solid #C9AE43;
+        border-right: 3px solid #C9AE43;
+    }
+    .links{width: auto;}
+    .link{width: 30vw;}
+    .flow{
+        transform: scale(1.5);
+        margin:10vh 0 5vh 0;
+        text-align: center;
+        color: #04b204;
+        font-weight: 400;
+        letter-spacing: 3px;
+        line-height: 120%;
+        text-transform: uppercase;
+        font-family: 'Quarntype';
+    }
+    .gif{height: 200px !important;display: flex;align-items: center;justify-content: center; overflow: hidden;}
+    .gif img{width: 100%;}
+    .kolaj1{height: 90% !important;}
+    .kolaj1 img{width: 100%;}
+    .wel{height: 0% !important;}
+    .wel img{width: 100%;border-bottom: 5px solid black;}
+    .yoko{height: 50vh  !important;}
+    .kolaj1text img{width: 100%;}
+    .kolaj2 img{width: 100%;}
+    .kolaj2 {height: auto !important;}
 }
